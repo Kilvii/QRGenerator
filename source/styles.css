@@ -1,0 +1,150 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  /* background-image: url('../images/fotor-ai-2024022602752.jpg'); */
+  padding: 20px;
+}
+
+.form-container {
+  background: #fff;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 8px;
+  border: 2px solid green;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-fullname {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-personal {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-school {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-olimp {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-citizenship {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-passport {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form-group {
+  margin-right: auto;
+  margin-bottom: 15px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="date"],
+.form-group select {
+  width: 90%;
+  padding: 8px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+}
+
+.form-group.full {
+  flex-basis: 100%;
+}
+
+.form-group.full input[type="date"],
+.form-group.full input[type="text"],
+.form-group.full input[type="tel"] {
+  width: 125px;
+}
+
+.form-group.full input[type="email"] {
+  width: 30%;
+}
+
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+
+#imgBox {
+  width: 200px;
+  border-radius: 5px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 2s;
+  
+}
+
+#imgBox img {
+  width: 100%;
+}
+
+#imgBox.show-img {
+  max-height: 300px;
+  margin: 30px auto;
+  border: 1px solid #d1d1d1;
+}
+
+.error {
+  animation: shake 0.1s linear 10;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+
+  0% {
+    transform: translateX(-2px);
+  }
+
+  0% {
+    transform: translateX(0);
+  }
+
+  0% {
+    transform: translateX(2px);
+  }
+
+  0% {
+    transform: translateX(0);
+  }
+}
+
+.gender-btn, .school-btn {
+  padding: 5px 10px;
+  margin-right: 10px;
+  border: 2px solid green;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+}
+
+.gender-btn.active, .school-btn.active {
+  background-color: #12f01d;
+}
+
+.button-group {
+  margin-bottom: 10px; 
+}
+
+.address {
+  margin-top: 39px;
+}
